@@ -4,7 +4,7 @@
 
 ### Ссылка 
 
-https://github.com/MJulia111/CEA-website/settings/pages
+https://mjulia111.github.io/CEA-website/
 
 ### Технологии
 
