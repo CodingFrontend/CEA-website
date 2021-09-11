@@ -1,0 +1,165 @@
+.header {
+	background-color: $color-bg-main;
+	// position: fixed;
+	// top: 0;
+	// left: 0;
+	// width: 100%;
+	position: relative;
+	z-index: 100;
+
+	.navbar {
+		padding: 16px 0;
+		overflow: hidden;
+		background-color: $color-bg-main;
+	}
+
+	&__registered-icon {
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		overflow: hidden;
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 5px;
+		transform: translate(0%, -50%);
+		img {
+			display: block;
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+
+	@include mediaMin($lg) {
+		.navbar-expand-lg .navbar-collapse {
+			display: block !important;
+			flex-basis: auto;
+		}
+	}
+
+	@include mediaMax($lg) {
+		z-index: 5000;
+	}
+
+	&__col {
+	}
+
+	&__menu {
+	}
+
+	&__navbar {
+		@include mediaMax($lg) {
+			margin: 20px 0px 10px 0px;
+		}
+		@include mediaMax($sm) {
+			display: flex;
+			flex-direction: column-reverse;
+		}
+	}
+
+	&__top {
+		margin: 0px 0px 24px 0px;
+		@include mediaMax($lg) {
+			margin: 0px 0px 10px 0px;
+		}
+		@include mediaMax($sm) {
+			margin: 20px 0px 0px 0px;
+			display: inline-flex;
+			flex-direction: column;
+		}
+	}
+
+	&__top-links {
+		@include list-reset();
+		@include mediaMax($sm) {
+			margin: 0px 0px 10px 5px;
+			align-self: start;
+		}
+	}
+
+	&__top-buttons {
+		@include mediaMax($sm) {
+			align-self: start;
+		}
+	}
+
+	&__top-link {
+		margin: 0px 16px 0px 0px;
+		a {
+			font-size: 13px;
+			line-height: 16px;
+			color: $color-grey-1;
+		}
+	}
+
+	&__top-button {
+		font-size: 13px;
+		line-height: 16px;
+		padding: 8px 35px;
+		border-radius: 16px;
+		&:first-of-type {
+			margin: 0px 16px 0px 0px;
+		}
+	}
+}
+.menu {
+	&__list {
+		li {
+			margin: 0px 24px 0px 0px;
+			&:last-child {
+				margin: 0;
+			}
+			@include mediaMax($xl) {
+				margin: 0px 18 / $maxWidthContainer * 100vw 0px 0px;
+			}
+			@include mediaMax($lg) {
+				margin: 0px 0px 15px 0px;
+			}
+			@include mediaMax($sm) {
+				margin: 0px 0px 15px 5px;
+				&:last-child {
+					margin: 0px 0px 0px 5px;
+				}
+			}
+		}
+	}
+
+	&__link {
+		color: $color-grey-3;
+		font-size: 13px;
+		letter-spacing: 0.26px;
+		text-transform: uppercase;
+		font-weight: 500;
+		@include mediaMax($xl) {
+			font-size: 12px;
+		}
+		@include mediaMax($lg) {
+			font-size: 14px;
+		}
+		transition: all 0.3s ease;
+		position: relative;
+
+		&:after {
+			@include mediaMin($lg) {
+				content: "";
+				width: 5px;
+				height: 5px;
+				background-color: $color-mint;
+				border-radius: 50%;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translate(-50%, 25px);
+				transition: all 0.1s ease;
+			}
+		}
+		&:hover {
+			@include mediaMin($lg) {
+				&:after {
+					transform: translate(-50%, 12px);
+				}
+			}
+			color: $color-mint;
+		}
+	}
+}

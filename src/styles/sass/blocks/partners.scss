@@ -1,0 +1,19 @@
+.partners {
+	padding: 56px 0px;
+	
+	@include mediaMax($sm) {
+		padding-bottom: 0;
+	}
+	@include mediaMax($md) {
+		padding: 40px 0;
+	}
+	&__list {
+		@include list-reset();
+	}
+
+	&__title {
+		@include mediaMax($sm) {
+			margin-bottom: 20px;
+		}
+	}
+}

@@ -1,0 +1,43 @@
+.login {
+	background: rgba(0, 0, 0, 0.53);
+	.container {
+		height: 100vh;
+		width: 100vw;
+	}
+
+	&__content {
+		width: 640px;
+		height: 640px;
+		background-color: $color-white;
+		border-radius: 50%;
+		padding: 40px;
+		margin: 0 auto;
+
+		@include mediaMax($md) {
+			border-radius: 0;
+			height: auto;
+			padding: 20px;
+		}
+	}
+	h2 {
+		padding: 56px 0px 0px 0px;
+		@include mediaMax($lg) {
+			padding: 28px 0px 0px 0px;
+		}
+	}
+
+	.sidebar-partners__btn {
+		width: 40px;
+		height: 40px;
+		margin: 24px 0px 0px 0px;
+		@include mediaMax($lg) {
+			margin: 0px 0px 0px 0px;
+		}
+	}
+
+	&__form {
+		@include mediaMax($lg) {
+			width: 100%;
+		}
+	}
+}

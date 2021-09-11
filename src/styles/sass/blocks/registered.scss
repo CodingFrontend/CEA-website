@@ -1,0 +1,92 @@
+.registered {
+	&__name {
+		font-weight: 700;
+		font-size: 25px;
+	}
+
+	&__subtitle {
+		font-size: 15px;
+		line-height: 24px;
+		margin: 0px 0px 56px 0px;
+		@include mediaMax($lg) {
+			margin: 0px 0px 25px 0px;
+		}
+	}
+
+	&__list {
+		li {
+			margin: 0px 0px 16px 0px;
+		}
+		@include mediaMax($lg) {
+			margin: 0px 0px 35px 0px;
+		}
+	}
+
+	&__img {
+		display: none;
+		width: 80px;
+		height: 80px;
+		overflow: hidden;
+		border-radius: 50%;
+		&.avatar {
+			display: block;
+		}
+	}
+
+	&__link {
+		font-size: 21px;
+		line-height: 32px;
+		color: #424242;
+		opacity: 0.5;
+
+		&.active {
+			color: $color-mint;
+			opacity: 1;
+		}
+	}
+
+	&__item {
+		span {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 24px;
+			flex: 0 0 80px;
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			background-color: $color-mint;
+			color: $color-white;
+			position: relative;
+			z-index: 2;
+			margin: 10px 0px 0px 0px;
+		}
+		.slide-vertical__item {
+			padding: 0px 0px 0px 24px;
+			@include mediaMax($lg) {
+				padding: 0;
+			}
+		}
+	}
+}
+
+.registered-partner {
+	&__info {
+		padding: 0px 56px 0px 28px;
+	}
+	&__add {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: $color-mint;
+		margin: 0px 0px 16px 0px;
+		cursor: pointer;
+	}
+	&__delete {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background-color: $color-grey-4;
+		cursor: pointer;
+	}
+}

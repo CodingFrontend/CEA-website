@@ -1,0 +1,144 @@
+.join-form {
+	background-color: $color-grey-4;
+}
+.partners-block {
+	padding-bottom: 150px;
+	@include mediaMax($lg) {
+		padding-bottom: 40px;
+	}
+	.container {
+		position: relative;
+	}
+	&__content {
+		position: relative;
+		z-index: 2;
+	}
+	&__img-group {
+		display: inline-block;
+		position: absolute;
+		top: 20px;
+		left: -20px;
+		width: 100%;
+		height: 100%;
+		@include mediaMax($lg) {
+			top: auto;
+			bottom: -200px;
+		}
+		@include mediaMax($md) {
+			bottom: -300px;
+		}
+		img {
+			&:nth-child(1) {
+				position: absolute;
+				bottom: -405px;
+				right: 76px;
+				&._anim-show {
+					transform: translate(0, -160%);
+					transition: all 2.8s ease;
+				}
+				@include mediaMax($lg) {
+					top: -200px;
+					&._anim-show {
+						transform: translate(0, -20%);
+						transition: all 2.8s ease;
+					}
+				}
+				@include mediaMax($md) {
+					top: -305px;
+					left: 10px;
+				}
+			}
+			&:nth-child(2) {
+				position: absolute;
+				bottom: -84px;
+				right: -90px;
+				&._anim-show {
+					transform: translate(0, -45%);
+					transition: all 1.8s ease;
+					@include mediaMax($lg) {
+						display: none;
+					}
+				}
+			}
+			&:nth-child(3) {
+				width: 16px;
+				height: 16px;
+				position: absolute;
+				bottom: -475px;
+				right: -5px;
+				&._anim-show {
+					transform: translate(0, -450%);
+
+					transition: all 3.5s ease;
+				}
+				@include mediaMax($lg) {
+					bottom: 133px;
+					right: 20px;
+					&._anim-show {
+						transform: translate(0, -100%);
+
+						transition: all 2.5s ease;
+					}
+				}
+
+				@include mediaMax($md) {
+					right: -40px;
+				}
+			}
+			&:nth-child(4) {
+				display: none;
+			}
+			&:nth-child(5) {
+				&._anim-show {
+					transform: translate(0, -50%);
+					transition: all 2s ease;
+				}
+			}
+			&:nth-child(6) {
+				width: 373px;
+				height: 373px;
+				position: absolute;
+				bottom: -500px;
+				right: -205px;
+				&._anim-show {
+					transform: translate(0, -20%);
+					transition: all 2.8s ease;
+				}
+				@include mediaMax($lg) {
+					display: none;
+				}
+			}
+			&:nth-child(7) {
+				width: 48px;
+				height: 48px;
+				position: absolute;
+				bottom: -130px;
+				right: 85px;
+				&._anim-show {
+					transform: translate(0, -200%);
+					transition: all 2.8s ease;
+				}
+			}
+			&:nth-child(8) {
+				width: 48px;
+				height: 48px;
+				position: absolute;
+				bottom: -300px;
+				left: 100px;
+				&._anim-show {
+					transform: translate(0, -260%);
+					transition: all 2.2s ease;
+				}
+			}
+		}
+		// &:after {
+		// 	content: "";
+		// 	position: absolute;
+		// 	top: 0px;
+		// 	left: -93%;
+		// 	background-color: $color-white;
+		// 	width: 1000px;
+		// 	height: 100%;
+		// }
+	}
+}

@@ -1,0 +1,13 @@
+.knowledge-body {
+	padding: 112px 0px 217px 0px;
+	.container {
+		position: relative;
+	}
+	@include mediaMax($lg) {
+		padding: 56px 0;
+	}
+
+	@include mediaMax($md) {
+		padding: 56px 0 20px 0;
+	}
+}

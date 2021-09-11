@@ -1,0 +1,29 @@
+.reasons {
+	position: relative;
+	z-index: 2;
+	&__container {
+	}
+
+	&__title {
+	}
+
+	&__list {
+		@include list-reset();
+		margin: 0 -28px;
+	}
+
+	&__item {
+		padding: 0 28px;
+	}
+
+	&__item-top {
+		width: 80px;
+		height: 80px;
+		background-color: $color-mint;
+		border-radius: 50%;
+		margin: 0px 0px 28px 0px;
+	}
+
+	&__item-content {
+	}
+}

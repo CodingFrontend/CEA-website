@@ -1,0 +1,49 @@
+$font-montserrat: "Montserrat";
+
+$maxWidthContainer: 1184;
+
+$maxWidthContainer: 1240;
+$maxWidthContainerXl: 2000;
+$maxWidthContainerSm: 1000;
+$maxWidthContainerXs: 632;
+
+$xl: 1183.98px;
+$lg: 991.98px;
+$md: 767.98px;
+$sm: 575.98px;
+$xs: 0;
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 575.98px,
+	md: 767.98px,
+	lg: 991.98px,
+	xl: 1183.98px,
+);
+
+// $display-font-sizes: (
+//   1: 5rem,
+//   2: 4.5rem,
+//   3: 4rem,
+//   4: 3.5rem,
+//   5: 3rem,
+//   6: 2.5rem
+// );
+
+$color-bg-main: #fdfdfd;
+$color-text-main: #424242;
+
+$color-white: #ffffff;
+$color-black: #000000;
+
+$color-grey-1: #757575;
+$color-grey-2: #e0e0e0;
+$color-grey-3: #212121;
+$color-grey-4: #f5f5f5;
+$color-grey-5: #d4d4d4;
+$color-grey-6: #bdbdbd;
+
+$color-btn-light: #fdfdfd;
+
+$color-mint: #01b5b7;
+$color-mint-hover: #04a6a7;

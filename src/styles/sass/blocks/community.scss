@@ -1,0 +1,22 @@
+.community {
+	padding: 112px 0px;
+	position: relative;
+	@include mediaMax($lg) {
+		padding: 56px 0;
+	}
+	@include mediaMax($md) {
+		padding: 40px 0;
+	}
+	&__container {
+		position: relative;
+		z-index: 2;
+	}
+	&__map {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-position: top;
+	}
+}

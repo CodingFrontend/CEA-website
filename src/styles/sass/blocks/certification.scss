@@ -1,0 +1,38 @@
+.certification {
+	padding: 120px 0;
+	background: url("img/about-certification/bg.jpg") center center no-repeat;
+	background-size: contain;
+	@include mediaMax($md) {
+		background-size: cover;
+		padding: 80px 0;
+		
+	}
+	&__container {
+	}
+
+	&__content {
+		// width: 640px;
+		// height: 640px;
+		// border-radius: 50%;
+		// background-color: $color-grey-4;
+	}
+
+	&__logos {
+		margin: 0px 0px 56px 0px;
+	}
+
+	&__logo {
+		&:first-of-type {
+			margin: 0px 56px 0px 0px;
+		}
+	}
+
+	&__title {
+		margin: 0px 0px 16px 0px;
+	}
+
+	&__text {
+		margin: 0px 0px 28px 0px;
+		max-width: 480px;
+	}
+}

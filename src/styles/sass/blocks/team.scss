@@ -1,0 +1,45 @@
+.team {
+	&__content {
+	}
+
+	&__text {
+	}
+
+	&__list {
+		@include list-reset();
+		margin: 56px 0px 0px 0px;
+	}
+
+	&__item {
+		margin: 0px 0px 56px 0px;
+	}
+
+	&__item-img {
+		margin: 0px 0px 16px 0px;
+		overflow: hidden;
+		border-radius: 50%;
+		width: 180px;
+		height: 180px;
+		img {
+			width: 100%;
+			display: block;
+			height: 100%;
+		}
+		@include mediaMax($sm) {
+			width: 125px;
+			height: 125px;
+		}
+	}
+
+	&__item-name {
+		font-weight: 700;
+		margin: 0px 0px 8px 0px;
+	}
+
+	&__item-link {
+		margin: 0px 0px 16px 0px;
+	}
+
+	&__item-logo {
+	}
+}

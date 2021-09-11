@@ -1,0 +1,17 @@
+.courses {
+	.custom-select {
+		min-height: 72px;
+		height: auto;
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+	button {
+		width: 168px;
+		&:first-child {
+			margin-right: 16px;
+			@include mediaMax($lg) {
+				margin-right: 0;
+			}
+		}
+	}
+}
