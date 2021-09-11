@@ -2,10 +2,10 @@
 
 ## Верстка многостраничного коммерческого сайта для иностранного заказчика
 
-### Ссылка 
+### Посмотреть результат можно по ссылке
 
-https://mjulia111.github.io/CEA-website/
+✅ https://mjulia111.github.io/CEA-website/
 
 ### Технологии
 
-HTML, SCSS, JS, GULP
+✅ HTML, SCSS, JS, GULP
